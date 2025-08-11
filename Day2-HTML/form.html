@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="icon" type="image" href="images/favicon.png">
+</head>
+<body>
+    <!-- ================ Form ================== -->
+    <h1>Registeration Form</h1>
+    <fieldset>
+    <legend><b>Your Information</b></legend>
+    <form action="page1.html" target="_blank"  method="post" autocomplete="off">
+        <label for="fName"><b>User Name</b></label><br>
+        <input type="text" id="uName" name="uName" placeholder="Enter your name "><br><br>
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" name="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>  
+        <label for="age"><b>Age</b></label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+        <label for="birthday"><b>Birthday</b></label><br>
+        <input type="date" id="birthday" name="birthday" ><br><br>
+        <label for="commentText"><b>Write Your Comment</b></label><br>
+        <textarea rows="10" cols="70" id="commentText" placeholder="Write Your Comment"></textarea><br><br>
+        <select>
+            <option><b>choose your city...</b></option>
+            <option><b>Cairo</b></option>
+            <option><b>Alexandria</b></option>
+            <option><b>Giza</b></option>
+        </select><br><br>
+        <label>What your favourite sport?</label><br>
+        <input type="radio" name="sport">Football<br>
+        <input type="radio" name="sport">Basketball<br>
+        <input type="radio" name="sport">Vollyball<br>
+        <input type="radio" name="sport">swimming<br>
+        <label>What your favourite Languages?</label><br>
+        <input type="checkbox" name="Python">Python<br>
+        <input type="checkbox" name="JS">JS<br>
+        <input type="checkbox" name="C++">C++<br>
+        <input type="checkbox" name="Java">Java<br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
