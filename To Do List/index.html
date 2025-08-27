@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <button id="toggleMode"> Dark Mode</button>
+        <div class="container">
+            <h2>My To Do List</h2>
+            <form>
+                <input type="text" id="taskInput" placeholder="My Title........" />
+                <button type="button" onclick="addTask()">Add</button>
+            </form>
+        </div>
+
+        <ul id="taskList">
+            <li onclick="this.classList.toggle('completed')">
+                Read a Book
+                <button class="delete" onclick="this.parentElement.remove()">delete</button>
+            </li>
+            <li onclick="this.classList.toggle('completed')">
+                Organize office
+                <button class="delete" onclick="this.parentElement.remove()">delete</button>
+            </li>
+            <li onclick="this.classList.toggle('completed')">
+                Hit the Gym
+                <button class="delete" onclick="this.parentElement.remove()">delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

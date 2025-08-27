@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: -webkit-linear-gradient(90deg, #1d3946, #202124, #0f3242);
+    background: linear-gradient(90deg, #1d3946, #202124, #0f3242);
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    /* max-width: 800px; */
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0f3242;
+    color: antiquewhite;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:#296885;
+}
+
+#taskList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color:#1d3946;
+    color: white;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    margin:30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#taskList li:hover{
+    background-color: rgb(145, 143, 143);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+
+}
+
+.delete {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+    background-color: #e60000;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    background:#333;
+    color: #000;
+
+}
+
+body.dark-mode .container {
+    background-color: rgba(77, 75, 75, 0.1);
+}
+
+body.dark-mode #taskList li {
+    background-color: #aeacac;
+    color: #000;
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+}
